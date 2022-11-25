@@ -46,3 +46,27 @@
   height: 80px;
   padding-top: 20px;
 }
+.cook{
+  /* border: 1px solid; */
+  height: 300px;
+  width: 300px;
+  align-self: center;
+  margin: auto;
+}
+.cooki{
+  object-fit: cover;
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+.cont{
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 20px;
+}

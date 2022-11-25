@@ -6,7 +6,7 @@ import { MdRestaurant } from "react-icons/md";
 import { AiOutlineScan, AiOutlineUser } from "react-icons/ai";
 import cook from './cook.gif'
 const App = (props) => {
-  const [data, setData] = useState('https://google.com')
+  const [data, setData] = useState('No result Yet');
   const [done, setDone] = useState(false)
 
   return (
