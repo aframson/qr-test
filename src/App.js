@@ -14,14 +14,19 @@ const App = (props) => {
         containerStyle={{
           height: 'auto',
           width: '100%',
-          // position: 'fixed'
+          // position: 'fixed',
+          backGroundColor:'black'
         }}
         videoContainerStyle={{
           height: 'auto',
+          backGroundColor:'black'
+
         }}
         videoStyle={{
           height: 'auto',
-          width: '100%'
+          width: '100%',
+          backGroundColor:'black'
+
         }}
         constraints={{
           facingMode: "environment"
@@ -30,8 +35,7 @@ const App = (props) => {
           if (!!result) {
             setData(result?.text);
             if(result?.text.split(':')[0] === 'http' || result?.text.split(':')[0] === 'https'){
-               window.open(result?.text,'_blank');
-              //  alert('jrt')
+              window.open(result?.text, '_blank', 'noopener,noreferrer');
             }else{
               alert("Scan a Valid Url link")
             }
