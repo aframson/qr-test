@@ -30,7 +30,8 @@ const App = (props) => {
           if (!!result) {
             setData(result?.text);
             if(result?.text.split(':')[0] === 'http' || result?.text.split(':')[0] === 'https'){
-              window.open(result?.text);
+               window.open(result?.text);
+               alert('jrt')
             }else{
               alert("Scan a Valid Url link")
             }
@@ -57,19 +58,19 @@ const App = (props) => {
 
       <div className='menu'>
         <div className='item'>
-          <div className='ibox'>
+          <div onClick={()=>alert('Page under Developement')} className='ibox'>
             <MdRestaurant size={30} color="black" />
             <div className='mtxt'>Restaurants</div>
           </div>
         </div>
         <div className='item'>
-          <div className='ibox'>
+          <div onClick={()=>alert('The camera is right infornt of you.')} className='ibox'>
             <AiOutlineScan size={30} color="#00D21A" />
             <div className='mtxt'>Scan</div>
           </div>
         </div>
         <div className='item'>
-          <div className='ibox'>
+          <div onClick={()=>alert('Page under Developement')} className='ibox'>
             <AiOutlineUser size={30} color="black" />
             <div className='mtxt'>Register</div>
           </div>
