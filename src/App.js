@@ -29,6 +29,11 @@ const App = (props) => {
         onResult={(result, error) => {
           if (!!result) {
             setData(result?.text);
+            if(result?.text.split(':')[0] === 'http' || result?.text.split(':')[0] === 'https'){
+              window.open(result?.text);
+            }else{
+              alert("Scan a Valid Url link")
+            }
           }
           if (!!error) {
             console.info(error);
