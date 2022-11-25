@@ -30,8 +30,8 @@ const App = (props) => {
           if (!!result) {
             setData(result?.text);
             if(result?.text.split(':')[0] === 'http' || result?.text.split(':')[0] === 'https'){
-               window.open(result?.text);
-               alert('jrt')
+               window.open(result?.text,'_blank');
+              //  alert('jrt')
             }else{
               alert("Scan a Valid Url link")
             }
