@@ -11,7 +11,7 @@ const App = (props) => {
 
   return (
     <>
-      {done ?
+      {!done ?
         <QrReader
           containerStyle={{
             height: 'auto',
@@ -66,7 +66,7 @@ const App = (props) => {
         </div>
       </center>
       <center>
-        <div style={{ display: !done ? 'none' : 'block' }} className='contentbox'>
+        <div style={{ display:done ? 'none' : 'block' }} className='contentbox'>
           Point the camera at the QR-code and wait for autofocus. The app will scan the code and forward
           you to the establishment
           <p>{data}</p>
