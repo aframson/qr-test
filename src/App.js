@@ -14,7 +14,7 @@ const App = (props) => {
         containerStyle={{
           height: 'auto',
           width: '100%',
-          position: 'fixed'
+          // position: 'fixed'
         }}
         videoContainerStyle={{
           height: 'auto',
