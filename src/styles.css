@@ -29,8 +29,8 @@
 }
 .menu{
   border-top: 1px solid rgb(211, 211, 211);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
   bottom: 0;
   margin: auto;
   position: fixed;

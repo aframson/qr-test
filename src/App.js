@@ -75,12 +75,7 @@ const App = (props) => {
       </center>
 
       <div className='menu'>
-        <div className='item'>
-          <div onClick={() => alert('Page under Developement')} className='ibox'>
-            <MdRestaurant size={30} color="black" />
-            <div className='mtxt'>Restaurants</div>
-          </div>
-        </div>
+       
         <div className='item'>
           <div onClick={() => {
             setData('')
@@ -90,12 +85,7 @@ const App = (props) => {
             <div className='mtxt'>Scan</div>
           </div>
         </div>
-        <div className='item'>
-          <div onClick={() => alert('Page under Developement')} className='ibox'>
-            <AiOutlineUser size={30} color="black" />
-            <div className='mtxt'>Register</div>
-          </div>
-        </div>
+      
       </div>
     </>
   );
