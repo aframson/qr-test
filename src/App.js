@@ -6,7 +6,7 @@ import { MdRestaurant } from "react-icons/md";
 import { AiOutlineScan, AiOutlineUser } from "react-icons/ai";
 import cook from './cook.gif'
 const App = (props) => {
-  const [data, setData] = useState('https://google.com')
+  const [data, setData] = useState('')
   const [done, setDone] = useState(false)
 
   return (
@@ -36,6 +36,7 @@ const App = (props) => {
           onResult={(result, error) => {
             if (!!result) {
               setData(result?.text);
+              setDone(true)
               if (result?.text.split(':')[0] === 'http' || result?.text.split(':')[0] === 'https') {
 
               } else {
