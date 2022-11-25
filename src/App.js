@@ -13,7 +13,8 @@ const App = (props) => {
       <QrReader
         containerStyle={{
           height: 'auto',
-          width: '100%'
+          width: '100%',
+          position: 'fixed'
         }}
         videoContainerStyle={{
           height: 'auto',
@@ -33,16 +34,22 @@ const App = (props) => {
             console.info(error);
           }
         }}
-      // style={{ width: '100%' }}
+        style={{ height: 'auto' }}
       />
       <center>
         <img src={logo} className={'img'} alt="logo" />
+        <div className='contentbox2'>
+          This page is for scanning purpose only. for more information kindly explore the other menu options.
+        </div>
       </center>
-      <div className='contentbox'>
-        Point the camera at the QR-code and wait for autofocus. The app will scan the code and forward
-        you to the establishment
-        <p>{data}</p>
-      </div>
+      <center>
+        <div className='contentbox'>
+          Point the camera at the QR-code and wait for autofocus. The app will scan the code and forward
+          you to the establishment
+          <p>{data}</p>
+        </div>
+      </center>
+
       <div className='menu'>
         <div className='item'>
           <div className='ibox'>
