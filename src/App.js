@@ -82,7 +82,10 @@ const App = (props) => {
           </div>
         </div>
         <div className='item'>
-          <div onClick={() => alert('The camera is right infornt of you.')} className='ibox'>
+          <div onClick={() => {
+            setData('')
+            setDone(false)
+          }} className='ibox'>
             <AiOutlineScan size={30} color="#00D21A" />
             <div className='mtxt'>Scan</div>
           </div>
